@@ -1,12 +1,14 @@
 @{
     ViewData["Home"] = "Index";
 }
-<img  src = "@ViewBag.Disco.foto"  alt = "Foto Disco" class = "Foto-Disco"/>
-<h2>Nombre: @ViewBag.Disco.Nombre </h2>   
-<h3>Artista: @ViewBag.Disco.artista</h3>    
-<h3>Productora: @ViewBag.Disco.productor </h3>
-<h3>genero: @ViewBag.Disco.genero</h3>        
+<div class = h3>
+<img  src = "@ViewBag.Disco.foto"  alt = "Foto Disco" class = "Foto"/>
+<h2  >Nombre: @ViewBag.Disco.Nombre </h2>   
+<h3 >Artista: @ViewBag.Disco.artista</h3>    
+<h3 >Productora: @ViewBag.Disco.productor </h3>
+<h3 >genero: @ViewBag.Disco.genero</h3>
+</div>        
  @foreach(string cancion in ViewBag.Disco.canciones){
-    <li>@cancion</li>
+    <li class = " cancion ">@cancion </li>
  }
- <h3><a href = '@Url.Action("Index","home")'>Volver a la pagina principal </a> </h3>
+ <h3><a href = '@Url.Action("Index","home")'>Volver a la pagina principal </a> <h3>

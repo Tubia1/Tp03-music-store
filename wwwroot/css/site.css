@@ -21,3 +21,51 @@ footer {
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
 }
+.Foto-Discos
+{
+  width: 200px; 
+  height: auto; 
+  display: block;
+  margin: 0 auto; 
+  border-radius: 30px; 
+  border: 1px;
+  float: left;
+  padding-right: 2%;
+}
+*{
+  background-color: hsl(118, 83%, 77%);
+}
+footer 
+{
+  text-align: center;
+} 
+div
+{
+   padding: 2%;
+   padding-bottom: 1%;
+}
+.cancion
+{
+ margin-top: 0%;
+ margin-bottom: 0.5%;
+ text-align: center;
+}
+.h3
+{
+ margin-bottom: 0% ;
+ text-align: center;
+
+}
+.Foto
+{
+  width: 200px; 
+  height: auto; 
+  display: block;
+  margin: 0 auto; 
+  border-radius: 30px; 
+
+  
+  
+  
+}
+ 

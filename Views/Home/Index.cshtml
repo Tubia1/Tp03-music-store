@@ -3,6 +3,7 @@
 }
 <div>
 <h1>CATALOGO DE DISCOS</h1>
+ <link rel="stylesheet" href="~/css/site.css" />
  @foreach(int id in ViewBag.Discos.Keys)
  {
 <img  src = "@ViewBag.Discos[id].foto"  alt = "Foto Discos" class = "Foto-Discos"/>
@@ -14,3 +15,9 @@
  }
 
 </div>
+</div>
+<footer>
+    <div class="footer">
+    <p>  La Banda del Morgan. Todos los derechos reservados.</p>
+    </div> 
+</footer>   
