@@ -16,7 +16,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         Catalogo.InicializarDiscos();
-        ViewBag.Index = Catalogo.Discos;
+        ViewBag.Discos = Catalogo.Discos;
         return View("index");
     }
     public IActionResult ElegirDisco(int id)

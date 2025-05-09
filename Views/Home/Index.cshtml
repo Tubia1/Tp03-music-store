@@ -1,8 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Home"] = "Index";
 }
-
 <div>
-    <h1>Index</h1>
-    <p>Bienvenidos al sitio web de NombreProyecto</p>
+<h1>CATALOGO DE DISCOS</h1>
+ @foreach(int id in ViewBag.Discos.Keys)
+ {
+<img  src = "@ViewBag.Discos[id].foto"  alt = "Foto Discos" class = "Foto-Discos"/>
+<h2>Nombre: @ViewBag.Discos[id].Nombre </h2>   
+<h3>Artista: @ViewBag.Discos[id].artista</h3>    
+<h3>Productora: @ViewBag.Discos[id].productor </h3>
+<h3>genero: @ViewBag.Discos[id].genero</h3>        
+<h4><a href = '@Url.Action("ElegirDisco","Home", new {id = id})'>Ver Disco Completo</a></h4>
+ }
+
 </div>
